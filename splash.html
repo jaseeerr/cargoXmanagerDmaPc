@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; img-src 'self'; style-src 'unsafe-inline';"
+    />
+    <title>CargoXmanager</title>
+    <style>
+      :root {
+        color-scheme: light;
+        font-family: Inter, "Segoe UI", Arial, sans-serif;
+      }
+
+      html,
+      body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+      }
+
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        background:
+          radial-gradient(circle at 20% 15%, rgba(255, 255, 255, 0.95), transparent 34%),
+          linear-gradient(135deg, #f8fbff 0%, #e9f4ff 46%, #eef8f3 100%);
+      }
+
+      .splash {
+        display: grid;
+        justify-items: center;
+        align-content: center;
+        gap: 22px;
+        padding: 36px;
+        min-height: 100%;
+        box-sizing: border-box;
+      }
+
+      img {
+        width: min(320px, 70vw);
+        height: auto;
+        display: block;
+      }
+
+      h1 {
+        margin: 0;
+        color: #102033;
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 1.15;
+      }
+
+      .loader {
+        width: 148px;
+        height: 4px;
+        overflow: hidden;
+        border-radius: 999px;
+        background: rgba(14, 71, 126, 0.14);
+      }
+
+      .loader::before {
+        content: "";
+        display: block;
+        width: 42%;
+        height: 100%;
+        border-radius: inherit;
+        background: linear-gradient(90deg, #0b63b6, #14a5a8);
+        animation: load 1.1s ease-in-out infinite;
+      }
+
+      @keyframes load {
+        0% {
+          transform: translateX(-110%);
+        }
+
+        100% {
+          transform: translateX(250%);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="splash" aria-label="CargoXmanager loading">
+      <img src="logo.png" alt="DMA Dubai logo" />
+      <h1>CargoXmanager</h1>
+      <div class="loader" aria-hidden="true"></div>
+    </main>
+  </body>
+</html>

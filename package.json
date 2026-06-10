@@ -1,0 +1,27 @@
+{
+  "name": "cargoxmanagerdma",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "build": {
+    "appId": "com.dmadubai.cargoxmanager",
+    "productName": "CargoXmanager",
+    "icon": "logo.png",
+    "files": [
+      "main.js",
+      "splash.html",
+      "logo.png",
+      "package.json"
+    ]
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "electron": "^31.7.7",
+    "electron-builder": "^26.15.2"
+  }
+}
