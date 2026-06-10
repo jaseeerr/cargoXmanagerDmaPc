@@ -12,6 +12,7 @@ function getAppIcon() {
 
   return icon.isEmpty() ? undefined : icon;
 }
+//
 
 function createMainWindow(appIcon) {
   const win = new BrowserWindow({
