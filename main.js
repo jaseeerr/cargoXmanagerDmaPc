@@ -5,7 +5,7 @@ const TARGET_URL = 'https://cargox.dmadubai.com';
 const APP_NAME = 'CargoXmanager';
 const LOGO_PATH = path.join(__dirname, 'logo.png');
 const SPLASH_PATH = path.join(__dirname, 'splash.html');
-const SPLASH_DURATION_MS = 10000;
+const SPLASH_DURATION_MS = 2500;
 
 function getAppIcon() {
   const icon = nativeImage.createFromPath(LOGO_PATH);
